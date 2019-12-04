@@ -10,7 +10,19 @@
   </div>
   <div class="form-group">
     <label for="">Password</label>
-    <input class="form-control" type="password" [(ngModel)]="user.password" />
+    <input
+      class="form-control"
+      type="password"
+      [(ngModel)]="user.passwords.password"
+    />
+  </div>
+  <div class="form-group">
+    <label for="">Confirm Password</label>
+    <input
+      class="form-control"
+      type="password"
+      [(ngModel)]="user.passwords.confirm_password"
+    />
   </div>
   <button class="btn btn-success" (click)="register()">Register</button>
   <ul>
